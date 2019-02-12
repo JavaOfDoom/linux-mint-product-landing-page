@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #81CE61;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+#page-wrapper {
+  position: relative;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  padding: 0px 20px;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #92A381;
+  min-height: 80px;
+  width: 100%;
+}
+@media (max-width: 300px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 100px 0 0 0;
+}
+.container h1 {
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 50vw;
+}
+@media (max-width: 750px) {
+  .logo {
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+  }
+}
+
+nav {
+  font-weight: 400;
+}
+@media (max-width: 650px) {
+  nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  }
+}
+nav ul {
+  display: flex;
+  width: 50vw;
+  flex-direction: row;
+  justify-content: space-around;
+}
+nav ul li {
+  list-style: none;
+  margin: 0 1em;
+  font-size: 24px;
+}
+
+#header-img {
+  width: 100%;
+  height: 100%;
+  max-width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 20px;
+  text-align: center;
+}
+@media (max-width: 650px) {
+  #header-img {
+    margin: 0 auto;
+  }
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+  width: 90vw;
+  justify-content: center;
+}
+#about p {
+  margin-bottom: 20px;
+  word-wrap: break-word;
+}
+#about ul {
+  justify-content: center;
+  width: 50vw;
+}
+#about ul li {
+  margin: 15px 0px;
+}
+
+#review {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+#review iframe {
+  width: 90vw;
+  max-width: 600px;
+}
+
+#download {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#download #cinnamon, #download #mate, #download #xfce {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  margin: 20px;
+  border: 2px solid #000;
+  border-radius: 5px;
+}
+#download #cinnamon .version, #download #mate .version, #download #xfce .version {
+  background-color: #92A381;
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  font-weight: 600;
+}
+#download #cinnamon h5, #download #mate h5, #download #xfce h5 {
+  margin: 10px;
+  width: 100%;
+}
+#download #cinnamon button, #download #mate button, #download #xfce button {
+  margin: 10px;
+  padding: 5px;
+  font-weight: 600;
+}
+
+#updates {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 20px;
+}
+#updates #form {
+  display: flex;
+  flex-direction: row;
+}
+#updates #form input[type="email"] {
+  max-width: 250px;
+  width: 100%;
+  padding: 5px;
+  margin: 5px;
+}
+#updates #form input[type="submit"] {
+  max-width: 120px;
+  width: 100%;
+  padding: 5px;
+  margin: 5px;
+}
+
+footer {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #DBFCC0;
+  width: 100%;
+}
+footer ul {
+  display: flex;
+  justify-content: flex-end;
+}
+footer ul li {
+  list-style: none;
+  padding: 0 10px;
+}
+footer span {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 0.9em;
+}
